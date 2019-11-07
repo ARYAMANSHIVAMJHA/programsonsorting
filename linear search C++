@@ -1,0 +1,21 @@
+#include <iostream> 
+using namespace std; 
+  
+int Search(int arr[], int n, int x) 
+{ 
+    int i; 
+    for (i = 0; i < n; i++) 
+        if (ar[i] == x) 
+            return i; 
+    return -1; 
+} 
+int main(void) 
+{ 
+    int ar[] = { 3, 5, 8, 14, 45 }; 
+    int x = 10; 
+    int n = sizeof(ar) / sizeof(ar[0]); 
+    int result = Search(ar, n, x); 
+   (result == -1)? cout<<"Element is not present in array" 
+                 : cout<<"Element is present at index " <<result; 
+   return 0; 
+} 
