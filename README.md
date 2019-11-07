@@ -1,2 +1,2 @@
-# programs on sorting
-different types of sorting using different programming languages
+# programs on sorting and searching
+different types of sorting and searching techniques using different programming languages
