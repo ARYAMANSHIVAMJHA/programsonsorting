@@ -1,0 +1,27 @@
+class Binarysearch
+{ 
+    int binary(int ar[], int l, int r, int x) 
+    { 
+        if (r >= l) { 
+        int mid = l + (r - l) / 2; 
+        if (ar[mid] == x) 
+        return mid; 
+        if (ar[mid] > x) 
+        return binary(ar, l, mid - 1, x); 
+        return binary(ar, mid + 1, r, x); 
+        } 
+        return -1; 
+    } 
+    public static void main(String args[]) 
+    { 
+        Binarysearch ob = new Binarysearch(); 
+        int ar[] = { 1, 5, 7, 19, 46 }; 
+        int n = arr.length; 
+        int x = 10; 
+        int result = ob.binary(arr, 0, n - 1, x); 
+        if (result == -1) 
+        System.out.println("Element not present"); 
+        else
+        System.out.println("Element found at index " + result); 
+    } 
+} 
